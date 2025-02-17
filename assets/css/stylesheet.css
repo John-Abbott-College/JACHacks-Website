@@ -87,30 +87,7 @@ main {
   height: 83vh;
   --color: rgba(114, 114, 114, 0.3);
   background-color: #241d40;
-  background-image: linear-gradient(
-      0deg,
-      transparent 24%,
-      var(--color) 25%,
-      var(--color) 26%,
-      transparent 27%,
-      transparent 74%,
-      var(--color) 75%,
-      var(--color) 76%,
-      transparent 77%,
-      transparent
-    ),
-    linear-gradient(
-      90deg,
-      transparent 24%,
-      var(--color) 25%,
-      var(--color) 26%,
-      transparent 27%,
-      transparent 74%,
-      var(--color) 75%,
-      var(--color) 76%,
-      transparent 77%,
-      transparent
-    );
+
   background-size: 55px 55px;
   background-attachment: fixed;
 }
@@ -346,6 +323,12 @@ main {
   margin-left: 2em;
 }
 
+#dream-it .container {
+  margin: 0 auto;
+  --shadow-color: hsla(280, 100%, 55%, 0.944);
+  filter: drop-shadow(-2px 2px 3px var(--shadow-color));
+}
+
 #dream-it {
   position: relative;
   margin-top: 15vh;
@@ -354,22 +337,17 @@ main {
   margin-bottom: 15vh;
 }
 
-#dream-it .container {
-  margin: 0 auto;
-  --shadow-color: hsla(280, 100%, 55%, 0.944);
-  filter: drop-shadow(-2px 2px 3px var(--shadow-color));
-}
-
 #container1 {
-  position: absolute;
   z-index: 2;
+  width: 50%;
+  position: absolute;
 }
 
 #container2,
 #container3,
 #container4 {
   position: absolute;
-  width: 50%;
+  width: 60%;
 }
 
 #container2 img,
@@ -383,7 +361,7 @@ main {
 }
 
 #container1 {
-  top: 35%;
+  top: 40%;
   left: -15%;
   --shadow-color: hsla(155, 100%, 41%, 0.944);
   filter: drop-shadow(1px 2px 8px var(--shadow-color));
@@ -395,13 +373,89 @@ main {
 }
 
 #container3 {
-  top: 25%;
+  top: 35%;
   left: 50%;
 }
 
 #container4 {
-  top: 55%;
+  top: 65%;
   left: 25%;
+}
+
+/* Media Query for screens below 1200px */
+@media (max-width: 1199px) {
+  #dream-it {
+    width: 100%;
+    height: 100vh;
+  }
+  #container1 {
+    min-width: 80vw;
+  }
+
+  #container2,
+  #container3,
+  #container4 {
+    width: 40%;
+  }
+
+  #container1 {
+    top: 0%;
+    left: 8%;
+  }
+
+  #container2 {
+    top: 23%;
+    left: 10%;
+  }
+
+  #container3 {
+    top: 20%;
+    left: 50%;
+  }
+
+  #container4 {
+    top: 40%;
+    left: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  #dream-it {
+    margin-top: 10vh;
+    position: relative; /* Ensure the container stays within the section */
+    height: auto;
+  }
+
+  #container1 {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  #container2,
+  #container3,
+  #container4 {
+    position: relative;
+    width: 65%;
+    top: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  #container2 {
+    margin-top: 20px;
+    left: -3%;
+  }
+
+  #container3 {
+    left: 3%;
+  }
+
+  #container4 {
+    left: -3%;
+  }
 }
 
 #dream-it .container-top {
@@ -563,6 +617,7 @@ h1 {
   display: flex;
   width: 85%;
   padding-bottom: 8vh;
+  margin-top: 15vh;
 }
 
 .cols {

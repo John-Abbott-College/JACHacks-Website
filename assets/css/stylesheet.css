@@ -337,6 +337,30 @@ main {
   margin-bottom: 15vh;
 }
 
+/* Add the animation to the images */
+@keyframes pop-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation when the element is in view */
+.pop-up-image {
+  opacity: 0;
+  transform: translateY(30px); /* Start with the image below */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add the 'in-view' class to trigger animation */
+.pop-up-image.in-view {
+  animation: pop-up 1s forwards;
+}
+
 #container1 {
   z-index: 2;
   width: 50%;
@@ -424,6 +448,7 @@ main {
     margin-top: 10vh;
     position: relative; /* Ensure the container stays within the section */
     height: auto;
+    margin-bottom: 0px;
   }
 
   #container1 {

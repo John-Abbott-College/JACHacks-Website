@@ -36,15 +36,22 @@ glowButton.addEventListener("mouseover", () => {
       (typedText.style.filter = "drop-shadow(0px -0.6em 0.2em rgb(0, 0, 0))"),
       glowButton.classList.remove("afterHover");
   });
-const gear1 = document.querySelector("#gear1"),
-  gear2 = document.querySelector("#gear2"),
-  observer = new IntersectionObserver((e) => {
-    e.forEach((e) => {
-      e.isIntersecting
-        ? ((gear1.style.animationPlayState = "running"),
-          (gear2.style.animationPlayState = "running"))
-        : ((gear1.style.animationPlayState = "paused"),
-          (gear2.style.animationPlayState = "paused"));
-    });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".pop-up-image");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  images.forEach((image) => {
+    observer.observe(image);
   });
-observer.observe(gear1), observer.observe(gear2);
+});

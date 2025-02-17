@@ -134,7 +134,7 @@ main {
 
 .main-logo {
   filter: drop-shadow(0px -20px 6px rgba(0, 0, 0, 0.885));
-  width: 40%;
+  width: 30%;
   transition: all 0.2s ease-in-out;
   z-index: 0;
 }
@@ -346,6 +346,72 @@ main {
   margin-left: 2em;
 }
 
+#dream-it {
+  position: relative;
+  margin-top: 15vh;
+  height: 100vh;
+  width: 100vh;
+  margin-bottom: 15vh;
+}
+
+#dream-it .container {
+  margin: 0 auto;
+  --shadow-color: hsla(280, 100%, 55%, 0.944);
+  filter: drop-shadow(-2px 2px 3px var(--shadow-color));
+}
+
+#container1 {
+  position: absolute;
+  z-index: 2;
+}
+
+#container2,
+#container3,
+#container4 {
+  position: absolute;
+  width: 50%;
+}
+
+#container2 img,
+#container3 img,
+#container4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+#container1 {
+  top: 35%;
+  left: -15%;
+  --shadow-color: hsla(155, 100%, 41%, 0.944);
+  filter: drop-shadow(1px 2px 8px var(--shadow-color));
+}
+
+#container2 {
+  top: 0%;
+  left: 25%;
+}
+
+#container3 {
+  top: 25%;
+  left: 50%;
+}
+
+#container4 {
+  top: 55%;
+  left: 25%;
+}
+
+#dream-it .container-top {
+  background-color: rgb(179, 26, 255);
+}
+
+#dream-it .container-content {
+  margin: auto;
+}
+
 @media (max-width: 1500px) {
   .sponsor img {
     width: 65%;
@@ -477,6 +543,16 @@ h1 {
   font-size: 2rem;
   padding-bottom: 1.5em;
   width: 60%;
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion__input:checked + .accordion__label + .accordion__content {
+  max-height: 200px; /* Adjust based on content size */
 }
 
 .dummy {

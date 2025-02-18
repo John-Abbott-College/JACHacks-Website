@@ -29,12 +29,17 @@
   font-size: 1em;
 }
 
+@font-face {
+  font-family: Pattanakarn;
+  src: url("../fonts/fonnts.com-Pattanakarn_Regular.ttf");
+}
+
 body {
   color: white;
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: JetBrains Mono, monospace;
+  font-family: Pattanakarn, JetBrains Mono, monospace;
   overflow-x: hidden !important;
   background-color: #1b1630;
 }
@@ -87,7 +92,30 @@ main {
   height: 83vh;
   --color: rgba(114, 114, 114, 0.3);
   background-color: #241d40;
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
   background-size: 55px 55px;
   background-attachment: fixed;
 }
@@ -127,8 +155,7 @@ main {
 }
 
 .glowbutton {
-  font-family: JetBrains Mono, monospace;
-  hsl(220deg 100% 55%);
+  font-family: Pattanakarn, JetBrains Mono, monospace;
   --glow-color: rgba(180, 242, 245, 0.904);
   --glow-spread-color: rgba(113, 180, 182, 0.78);
   --btn-color: rgb(61, 127, 136);

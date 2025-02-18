@@ -87,7 +87,7 @@ main {
   height: 83vh;
   --color: rgba(114, 114, 114, 0.3);
   background-color: #241d40;
-
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
   background-size: 55px 55px;
   background-attachment: fixed;
 }
@@ -103,6 +103,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .intro {
@@ -110,10 +111,12 @@ main {
 }
 
 .main-logo {
-  filter: drop-shadow(0px -20px 6px rgba(0, 0, 0, 0.885));
-  width: 30%;
-  transition: all 0.2s ease-in-out;
-  z-index: 0;
+  width: 800px;
+  padding-left: 8%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: center;
+  align-items: center;
 }
 
 #typedtext {
@@ -125,6 +128,7 @@ main {
 
 .glowbutton {
   font-family: JetBrains Mono, monospace;
+  hsl(220deg 100% 55%);
   --glow-color: rgba(180, 242, 245, 0.904);
   --glow-spread-color: rgba(113, 180, 182, 0.78);
   --btn-color: rgb(61, 127, 136);
@@ -656,6 +660,7 @@ h1 {
   min-width: 80%;
   border-top: none;
   --shadow-color: hsla(305, 81%, 62%, 0.944);
+  filter: none;
 }
 
 .accordion__label {
@@ -1013,15 +1018,6 @@ hr {
   transform: rotate(30deg);
 }
 
-#title {
-  width: 100%;
-}
-
-.logo-title {
-  justify-content: center;
-  align-items: center;
-}
-
 .gears {
   width: 100%;
   display: flex;
@@ -1031,6 +1027,15 @@ hr {
   position: relative;
   right: 20%;
   top: -10%;
+}
+
+#title {
+  width: 100%;
+}
+
+.logo-title {
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1300px) {
@@ -1064,11 +1069,6 @@ hr {
 
   #typedtext {
     font-size: 1.1rem;
-  }
-
-  .glowbutton {
-    --glow-color: rgba(180, 242, 245, 0.822);
-    --glow-spread-color: rgba(99, 163, 165, 0.78);
   }
 }
 

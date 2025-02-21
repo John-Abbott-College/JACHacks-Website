@@ -6,6 +6,7 @@
     <title>JACHacks</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
     <script defer src="assets/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,24 +20,30 @@
     />
   </head>
   <body>
-    <header></header>
-    <main>
-      <section class="intro">
-        <div class="main-logo">
-          <div class="logo-title">
-            <img id="title" src="assets/images/JacHacks_pure_white.png" />
-          </div>
-          <div class="gears">
-            <img id="gear1" src="assets/images/gear1.png" /><img
-              id="gear2"
-              src="assets/images/gear2.png"
-            />
-          </div>
+    <section class="intro">
+      <section class="hero">
+        <img
+          src="./assets/images/landing/bits.png"
+          alt="Bits"
+          class="bits"
+          id="bits1"
+        />
+        <img
+          src="./assets/images/landing/lines.png"
+          alt="Lines"
+          class="lines"
+        />
+        <img
+          src="./assets/images/landing/final-logo.png"
+          alt="Final Logo"
+          class="logo"
+        />
+        <div class="date-button">
+          <p class="date">April 26-27</p>
+          <a href="https://forms.office.com/r/URHxxmvv4D" target="_blank"
+            ><button class="regist-button">Register now</button></a
+          >
         </div>
-        <div><p id="typedtext"></p></div>
-        <a href="https://forms.office.com/r/URHxxmvv4D" target="_blank"
-          ><button class="glowbutton">Register Now!</button></a
-        ><!--<button class="glowbutton">Registration is Closed</button>-->
       </section>
       <svg
         class="editorial"
@@ -51,21 +58,18 @@
             d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
           />
         </defs>
-        <g class="parallax1">
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1" />
-        </g>
         <g class="parallax2">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#501678" />
         </g>
         <g class="parallax3">
-          <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1" />
+          <use xlink:href="#gentle-wave" x="50" y="9" fill="#581c81" />
         </g>
         <g class="parallax4">
-          <use xlink:href="#gentle-wave" x="50" y="6" fill="#0d0d3c" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#210136" />
         </g>
       </svg>
-    </main>
-    <section class="stuff">
+    </section>
+    <main>
       <section id="about">
         <div class="container about-info pop-up-image">
           <div class="container-top">What is JACHacks?</div>
@@ -453,7 +457,7 @@
       </div>-->
       <div id="faq">
         <div class="cols">
-          <div class="accordion-title">Any questions?</div>
+          <div class="accordion-title">FAQ</div>
           <div class="container">
             <input
               type="checkbox"
@@ -534,7 +538,7 @@
               <p>
                 Rest assured! We'll start the event with team formation
                 sessions, allowing ample opportunity for you to find teammates.
-                You can form teams of up to 4 people before or during the event.
+                You can form teams of up to 4 people during the event.
               </p>
             </div>
           </div>
@@ -573,6 +577,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
   </body>
 </html>

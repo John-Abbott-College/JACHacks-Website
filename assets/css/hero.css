@@ -173,24 +173,14 @@ body {
     font-size: 16px;
   }
   .date-button {
-    bottom: 25%;
+    bottom: 28%;
   }
 }
 
 @media (max-width: 500px) {
-  .date-button,
-  #typedtext {
-    font-size: 26px;
-  }
   .logo {
-    top: 27%;
+    top: 32%;
     width: 350px;
-  }
-}
-
-@media (max-width: 405px) {
-  .logo {
-    width: 320px;
   }
   .date-button {
     flex-direction: column;
@@ -200,5 +190,14 @@ body {
   }
   .regist-button {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 420px) {
+  #typedtext {
+    line-height: 1.2;
+  }
+  .logo {
+    width: 320px;
   }
 }

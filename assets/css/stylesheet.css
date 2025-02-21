@@ -192,8 +192,7 @@ html {
 
 #dream-it .container {
   margin: 0 auto;
-  --shadow-color: hsla(280, 100%, 55%, 0.944);
-  filter: drop-shadow(-2px 2px 3px var(--shadow-color));
+  filter: none;
 }
 
 #dream-it {
@@ -251,8 +250,6 @@ html {
 #container1 {
   top: 40%;
   left: -15%;
-  --shadow-color: hsla(155, 100%, 41%, 0.944);
-  filter: drop-shadow(1px 2px 8px var(--shadow-color));
 }
 
 #container2 {
@@ -345,10 +342,6 @@ html {
   #container4 {
     left: -3%;
   }
-}
-
-#dream-it .container-top {
-  background-color: rgb(179, 26, 255);
 }
 
 #dream-it .container-content {
@@ -467,7 +460,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#210136, #4b041a);
+  background-image: linear-gradient(#210136, #350112);
   z-index: 1;
 }
 

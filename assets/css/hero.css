@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: Pattanakarn;
-  src: url("../fonts/fonnts.com-Pattanakarn_Regular.ttf");
+  src: url("../Pattanakarn_Regular.ttf");
 }
 /* CSS */
 :root {
@@ -63,6 +63,10 @@ body {
   z-index: 4;
 }
 
+#typedtext {
+  font-size: 50px;
+}
+
 .date-button {
   position: absolute;
   width: 100vw;
@@ -118,7 +122,8 @@ body {
     left: 15%;
     width: 550px;
   }
-  .date-button {
+  .date-button,
+  #typedtext {
     font-size: 40px;
   }
   .regist-button {
@@ -137,8 +142,8 @@ body {
     width: 450px;
   }
   .date-button,
-  .regist-button {
-    font-size: 30px;
+  #typedtext {
+    font-size: 32px;
   }
   .regist-button {
     font-size: 26px;
@@ -161,11 +166,12 @@ body {
 }
 
 @media (max-width: 600px) {
-  .date-button {
+  .date-button,
+  #typedtext {
     font-size: 28px;
   }
   .regist-button {
-    font-size: 24px;
+    font-size: 20px;
   }
   .date-button {
     bottom: 25%;
@@ -174,7 +180,7 @@ body {
 
 @media (max-width: 500px) {
   .date-button,
-  .regist-button {
+  #typedtext {
     font-size: 26px;
   }
   .logo {

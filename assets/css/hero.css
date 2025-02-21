@@ -23,6 +23,8 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: auto;
   background: linear-gradient(
       to bottom right,
       rgba(161, 56, 56, 1) 0%,
@@ -159,7 +161,7 @@ body {
     font-size: 28px;
   }
   .date-button {
-    bottom: 35%;
+    bottom: 25%;
   }
 }
 

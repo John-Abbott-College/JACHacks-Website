@@ -67,7 +67,7 @@ body {
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 30%;
+  bottom: 20%;
   color: var(--bg-color);
   z-index: 3;
   font-size: 50px;
@@ -137,7 +137,7 @@ body {
     font-size: 34px;
   }
   .date-button {
-    bottom: 40%;
+    bottom: 30%;
   }
   .date {
     margin-right: 20px;
@@ -159,27 +159,24 @@ body {
     font-size: 28px;
   }
   .date-button {
-    bottom: 45%;
+    bottom: 35%;
   }
 }
 
 @media (max-width: 500px) {
   .date-button,
   .regist-button {
-    font-size: 24px;
+    font-size: 26px;
   }
   .logo {
-    top: 25%;
+    top: 27%;
     width: 350px;
   }
 }
 
 @media (max-width: 400px) {
   .logo {
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
+    width: 320px;
   }
   .date-button {
     flex-direction: column;

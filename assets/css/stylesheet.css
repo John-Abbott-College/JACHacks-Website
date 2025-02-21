@@ -346,6 +346,7 @@ html {
 
 #dream-it .container-content {
   margin: auto;
+  background-color: #7e7e7e;
 }
 
 @media (max-width: 1500px) {

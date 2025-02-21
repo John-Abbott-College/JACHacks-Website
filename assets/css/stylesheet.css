@@ -21,14 +21,6 @@
   background: rgba(207, 130, 211, 0.523);
 }
 
-.change-language button {
-  background-color: rgba(107, 138, 252, 255);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1em;
-}
-
 @font-face {
   font-family: Pattanakarn;
   src: url("../fonts/fonnts.com-Pattanakarn_Regular.ttf");
@@ -48,106 +40,14 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
+.intro {
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
   height: 83vh;
-  --color: rgba(114, 114, 114, 0.3);
-  background: linear-gradient(217deg, #330033, transparent 60%),
-    linear-gradient(127deg, #1a0033, transparent 60%),
-    linear-gradient(336deg, #1a0033, transparent 0%), #000000;
-}
-
-.intro {
-  margin: 100%;
-  height: 90vh;
-  margin: 0 auto;
-  padding-top: 1em;
-  width: 80%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-}
-
-.main-logo {
-  width: 700px;
-  justify-content: center;
-  align-items: center;
-}
-
-#typedtext {
-  padding: 0.2em;
-  filter: drop-shadow(0px -10px 3px rgb(0, 0, 0));
-  color: #ff6b6b;
-  transition: all 0.2s ease-in-out;
-  font-size: 1rem;
-}
-
-.glowbutton {
-  font-family: Pattanakarn, JetBrains Mono, monospace;
-  --glow-color: rgba(180, 242, 245, 0.904);
-  --glow-spread-color: rgba(113, 180, 182, 0.78);
-  --btn-color: rgb(61, 127, 136);
-  border: 0.25em solid var(--glow-color);
-  padding: 1em 3em;
-  cursor: pointer;
-  margin-top: 1.5em;
-  color: var(--glow-color);
-  font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 1em;
-  outline: none;
-  box-shadow: 0 0 0.75em 0.15em var(--glow-color),
-    0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 0.65em 0.25em var(--glow-color);
-  text-shadow: 0 0 0.5em var(--glow-color);
-  position: relative;
-  transition: all 0.3s;
-  z-index: 10;
-  font-size: 1rem;
-}
-
-.glowbutton::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--glow-spread-color);
-  filter: blur(2em);
-  opacity: 0.4;
-  rotate: 180deg;
-  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
-  transition: all 0.3s;
-}
-
-.glowbutton.afterHover::after {
-  opacity: 0.7;
-  z-index: 10;
-}
-
-.glowbutton:hover {
-  color: var(--btn-color);
-  background-color: var(--glow-color);
-  box-shadow: 0 0 1em 0.15em var(--glow-color),
-    0 0 4em 1.3em var(--glow-spread-color),
-    inset 0 0 0.45em 0.05em var(--glow-color);
-}
-
-.glowbutton:active {
-  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
-    0 0 2.5em 2em var(--glow-spread-color),
-    inset 0 0 0.5em 0.25em var(--glow-color);
-  z-index: 11;
+  background-color: black;
 }
 
 .container {
@@ -155,11 +55,11 @@ main {
   flex-direction: column;
   max-width: 60%;
   border: 2px solid #fff;
-  --shadow-color: hsl(220deg 100% 55%);
+  --shadow-color: rgba(88, 28, 129, 1);
   filter: drop-shadow(1px 2px 8px var(--shadow-color));
   border-radius: 5px;
 }
-
+/*
 #sponsors {
   display: flex;
   align-items: center;
@@ -250,7 +150,7 @@ main {
   font-weight: bold;
   text-align: center;
 }
-
+*/
 #about {
   display: flex;
   align-items: center;
@@ -267,11 +167,11 @@ main {
   font-size: 1.8rem;
   font-weight: 600;
   color: rgb(240, 234, 234);
-  background-color: rgba(107, 138, 252, 255);
+  background-color: rgb(102, 33, 148);
 }
 
 .container-content {
-  background-image: linear-gradient(#282c51, #0f1336);
+  background-image: linear-gradient(rgb(70, 15, 107), rgb(68, 12, 105));
   color: rgb(209, 208, 208);
   padding: 0.8em;
   font-size: 1.2rem;
@@ -562,12 +462,12 @@ main {
   }
 }
 
-.stuff {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#0c0c3b, #2c0c3b);
+  background-image: linear-gradient(#210136, #4b041a);
   z-index: 1;
 }
 

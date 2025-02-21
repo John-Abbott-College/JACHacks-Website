@@ -500,6 +500,7 @@ h1 {
 #faq {
   display: flex;
   width: 85%;
+  margin-top: 10vh;
   padding-bottom: 20vh;
 }
 

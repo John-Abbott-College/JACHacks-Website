@@ -1,42 +1,49 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JACHacks</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
     <script defer src="assets/js/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <header></header>
-    <main>
-      <section class="intro">
-        <div class="main-logo">
-          <div class="logo-title">
-            <img id="title" src="assets/images/logo-title.png" />
-          </div>
-          <div class="gears">
-            <img id="gear1" src="assets/images/gear1.png" />
-            <img id="gear2" src="assets/images/gear2.png" />
-          </div>
+    <section class="intro">
+      <section class="hero">
+        <img
+          src="./assets/images/landing/bits.png"
+          alt="Bits"
+          class="bits"
+          id="bits1"
+        />
+        <img
+          src="./assets/images/landing/lines.png"
+          alt="Lines"
+          class="lines"
+        />
+        <img
+          src="./assets/images/landing/final-logo.png"
+          alt="Final Logo"
+          class="logo"
+        />
+        <div class="date-button">
+          <p class="date">April 26-27</p>
+          <a href="https://forms.office.com/r/URHxxmvv4D" target="_blank"
+            ><button class="regist-button">Register now</button></a
+          >
         </div>
-        <div><p id="typedtext"></p></div>
-
-        <a href="https://forms.office.com/r/nfRFVmev5s" target="_blank">
-          <button class="glowbutton">Inscrivez vous!</button></a
-        >
-        <!-- <button class="glowbutton">Inscription est Fermé</button>-->
       </section>
       <svg
         class="editorial"
@@ -51,23 +58,20 @@
             d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
           />
         </defs>
-        <g class="parallax1">
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1" />
-        </g>
         <g class="parallax2">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#501678" />
         </g>
         <g class="parallax3">
-          <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1" />
+          <use xlink:href="#gentle-wave" x="50" y="9" fill="#581c81" />
         </g>
         <g class="parallax4">
-          <use xlink:href="#gentle-wave" x="50" y="6" fill="#0d0d3c" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#210136" />
         </g>
       </svg>
-    </main>
-    <section class="stuff">
+    </section>
+    <main>
       <section id="about">
-        <div class="container about-info">
+        <div class="container about-info pop-up-image">
           <div class="container-top">Qu'est-ce que JACHacks?</div>
           <div class="container-content">
             JACHacks est le hackathon annuel du Collège John Abbott, et cette
@@ -76,13 +80,13 @@
             technologie de tous niveaux auront l'occasion de créer des projets
             impactants, d'apprendre de nouvelles technologies et de rencontrer
             des mentors de l'industrie. Rejoignez-nous pour une expérience
-            incroyable de programmation, de créativité et de communauté !<br />-
-            Organisé par le <b>Programme Science Informatique</b>du Cégep John
-            Abbott
+            incroyable de programmation, de créativité et de communauté ! -
+            Organisé par le
+            <b>Programme Informatique</b> du Cégep John Abbott
           </div>
         </div>
         <div class="container about-pic pop-up-image">
-          <img src="assets/images/last_year/initial_main.jpg" />
+          <img src="assets/images/last_year/initial_main.jpg" loading="lazy" />
         </div>
       </section>
       <section id="dream-it">
@@ -96,19 +100,30 @@
             endroit.
           </div>
         </div>
-        <div class="pop-up-image" id="container2">
-          <img src="./assets/images/last_year/image_2.jpg" alt="Image 2" />
+        <div id="container2" class="pop-up-image">
+          <img
+            src="./assets/images/last_year/image_2.jpg"
+            loading="lazy"
+            alt="Image 2"
+          />
         </div>
-        <div class="pop-up-image" id="container3">
-          <img src="./assets/images/last_year/image_3.jpg" alt="Image 3" />
+        <div id="container3" class="pop-up-image">
+          <img
+            src="./assets/images/last_year/image_3.jpg"
+            loading="lazy"
+            alt="Image 3"
+          />
         </div>
-        <div class="pop-up-image" id="container4">
-          <img src="./assets/images/last_year/image_0.jpg" alt="Image 4" />
+        <div id="container4" class="pop-up-image">
+          <img
+            src="./assets/images/last_year/image_0.jpg"
+            loading="lazy"
+            alt="Image 4"
+          />
         </div>
       </section>
-      <!--
-      <section id="sponsors">
-        <h1 id="team-title">Nos Sponsors</h1>
+      <!--<section id="sponsors">
+        <h1 id="team-title">Our Sponsors</h1>
         <hr />
         <br />
         <div class="sponsor-container">
@@ -141,23 +156,22 @@
         <div class="sponsor-container">
           <div class="sponsor">
             <p id="ITS-sponsor">
-              Services TI<br />
-              Cégep John Abbott
+              IT Services <br />
+              John Abbott College
             </p>
           </div>
           <div id="last-sponsor" class="border-outline"></div>
         </div>
       </section>
-
       <div id="team">
-        <h1 id="team-title">Rencontrez notre équipe</h1>
+        <h1 id="team-title">Meet our team</h1>
         <hr />
         <br />
         <div id="cards">
           <div class="card container">
             <img class="card-photo" src="assets/images/team/Carson.png" />
             <div class="card-title">
-              Carson Spriggs<br /><span>Chef d'équipe 📍</span>
+              Carson Spriggs<br /><span>Team Leader 📍</span>
             </div>
             <div class="card-socials">
               <a
@@ -200,13 +214,12 @@
                     d="m51.326 185.85h90.011v270.872h-90.011zm45.608-130.572c-30.807 0-50.934 20.225-50.934 46.771 0 26 19.538 46.813 49.756 46.813h.574c31.396 0 50.948-20.814 50.948-46.813-.589-26.546-19.551-46.771-50.344-46.771zm265.405 124.209c-47.779 0-69.184 26.28-81.125 44.71v-38.347h-90.038c1.192 25.411 0 270.872 0 270.872h90.038v-151.274c0-8.102.589-16.174 2.958-21.978 6.519-16.174 21.333-32.923 46.182-32.923 32.602 0 45.622 24.851 45.622 61.248v144.926h90.024v-155.323c0-83.199-44.402-121.911-103.661-121.911z"
                   ></path></svg
               ></a>
-              >
             </div>
           </div>
           <div class="card container">
             <img class="card-photo" src="assets/images/team/Lucas.png" />
             <div class="card-title">
-              Lucas Lalumière <br /><span>Technologie 🔧</span>
+              Lucas Lalumière <br /><span>Technology 🔧</span>
             </div>
             <div class="card-socials">
               <a
@@ -247,15 +260,14 @@
                 >
                   <path
                     d="m51.326 185.85h90.011v270.872h-90.011zm45.608-130.572c-30.807 0-50.934 20.225-50.934 46.771 0 26 19.538 46.813 49.756 46.813h.574c31.396 0 50.948-20.814 50.948-46.813-.589-26.546-19.551-46.771-50.344-46.771zm265.405 124.209c-47.779 0-69.184 26.28-81.125 44.71v-38.347h-90.038c1.192 25.411 0 270.872 0 270.872h90.038v-151.274c0-8.102.589-16.174 2.958-21.978 6.519-16.174 21.333-32.923 46.182-32.923 32.602 0 45.622 24.851 45.622 61.248v144.926h90.024v-155.323c0-83.199-44.402-121.911-103.661-121.911z"
-                  ></path>
-                </svg>
-              </a>
+                  ></path></svg
+              ></a>
             </div>
           </div>
           <div class="card container">
             <img class="card-photo" src="assets/images/team/Bogdan.png" />
             <div class="card-title">
-              Bogdan Feher<br /><span>Technologie 🔧</span>
+              Bogdan Feher<br /><span>Technology 🔧</span>
             </div>
             <div class="card-socials">
               <a
@@ -303,7 +315,7 @@
           <div class="card container">
             <img class="card-photo" src="assets/images/team/TJ.png" />
             <div class="card-title">
-              Timothy Klint (TJ) <br /><span>Logistique 📦</span>
+              Timothy Klint (TJ) <br /><span>Logistics 📦</span>
             </div>
             <div class="card-socials">
               <a
@@ -402,7 +414,7 @@
               src="assets/images/team/Meghrig.png"
             />
             <div class="card-title">
-              Meghrig Terzian<br /><span>Coordinatrice 💼</span>
+              Meghrig Terzian<br /><span>Coordinator 💼</span>
             </div>
             <div class="card-socials">
               <a
@@ -424,7 +436,7 @@
           <div class="card container">
             <img class="card-photo" src="assets/images/team/Aref2.png" />
             <div class="card-title">
-              Aref Mourtada<br /><span>Coordinateur 💼</span>
+              Aref Mourtada<br /><span>Coordinator 💼</span>
             </div>
             <div class="card-socials">
               <a
@@ -447,7 +459,7 @@
       </div>-->
       <div id="faq">
         <div class="cols">
-          <div class="accordion-title">Des questions?</div>
+          <div class="accordion-title">FAQ</div>
           <div class="container">
             <input
               type="checkbox"
@@ -517,7 +529,7 @@
           </div>
         </div>
         <div class="cols">
-          <div class="accordion-title dummy">Des questions?</div>
+          <div class="accordion-title dummy">FAQ</div>
           <div class="container">
             <input
               type="checkbox"
@@ -571,6 +583,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
   </body>
 </html>

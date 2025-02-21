@@ -9,10 +9,10 @@
 }
 /* CSS */
 :root {
-  --text-color: #690336;
+  --text-color: rgb(105, 29, 29);
   --bg-color: rgb(214, 56, 56);
-  --shadow-color: rgba(212, 9, 111, 0.5);
-  --shadow-hover: rgba(212, 9, 111, 0.8);
+  --shadow-color: rgba(212, 9, 36, 0.5);
+  --shadow-hover: rgba(212, 9, 43, 0.8);
 }
 
 body {
@@ -21,10 +21,9 @@ body {
 
 .hero {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent horizontal overflow */
   background: linear-gradient(
       to bottom right,
       rgba(161, 56, 56, 1) 0%,
@@ -84,13 +83,14 @@ body {
 
 .regist-button {
   margin-left: 30px;
-  font-size: 50px;
+  font-size: 35px;
   background-color: var(--bg-color);
   border-radius: 10px;
+  font-family: Pattanakarn, JetBrains Mono, monospace;
   box-shadow: var(--shadow-color) 0 -25px 18px -14px inset,
     var(--shadow-color) 0 1px 2px, var(--shadow-color) 0 2px 4px,
     var(--shadow-color) 0 4px 8px, var(--shadow-color) 0 8px 16px,
-    var(--shadow-color) 0 16px 32px;
+    var(--shadow-color) 0 8px 16px;
   color: var(--text-color);
   cursor: pointer;
   display: inline-block;
@@ -107,8 +107,8 @@ body {
 .regist-button:hover {
   box-shadow: var(--shadow-hover) 0 -25px 18px -14px inset,
     var(--shadow-hover) 0 1px 2px, var(--shadow-hover) 0 2px 4px,
-    var(--shadow-hover) 0 4px 8px, var(--shadow-hover) 0 8px 16px,
-    var(--shadow-hover) 0 16px 32px;
+    var(--shadow-hover) 0 2px 4px, var(--shadow-hover) 0 8px 16px,
+    var(--shadow-hover) 0 8px 16px;
   transform: scale(1.05);
 }
 
@@ -118,9 +118,11 @@ body {
     left: 15%;
     width: 550px;
   }
-  .date-button,
-  .regist-button {
+  .date-button {
     font-size: 40px;
+  }
+  .regist-button {
+    font-size: 30px;
   }
   .bits {
     width: 30%;
@@ -136,7 +138,10 @@ body {
   }
   .date-button,
   .regist-button {
-    font-size: 34px;
+    font-size: 30px;
+  }
+  .regist-button {
+    font-size: 26px;
   }
   .date-button {
     bottom: 30%;
@@ -156,9 +161,11 @@ body {
 }
 
 @media (max-width: 600px) {
-  .date-button,
-  .regist-button {
+  .date-button {
     font-size: 28px;
+  }
+  .regist-button {
+    font-size: 24px;
   }
   .date-button {
     bottom: 25%;
@@ -176,7 +183,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 405px) {
   .logo {
     width: 320px;
   }

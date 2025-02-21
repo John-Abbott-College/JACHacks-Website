@@ -46,6 +46,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin: 0;
+  padding: 0;
   height: 83vh;
   background-color: black;
 }
@@ -489,7 +490,7 @@ h1 {
 }
 
 .accordion__input:checked + .accordion__label + .accordion__content {
-  max-height: 200px; /* Adjust based on content size */
+  max-height: 200px;
 }
 
 .dummy {
@@ -499,8 +500,7 @@ h1 {
 #faq {
   display: flex;
   width: 85%;
-  padding-bottom: 8vh;
-  margin-top: 15vh;
+  padding-bottom: 20vh;
 }
 
 .cols {
@@ -656,7 +656,6 @@ h1 {
   width: 100%;
   height: 65px;
   max-height: 6%;
-  margin-top: 30px;
   left: 0;
   bottom: 0;
   z-index: 1;

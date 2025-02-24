@@ -239,16 +239,24 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .tabs label {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
+    align-items: center;
   }
   .tab-text {
-    min-width: 100%;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .tab-content-1 .tab-item .tab-image,
   .tab-item .tab-text {
     width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .tabs label,
+  .tab-text {
+    font-size: 0.7rem;
+    align-items: center;
   }
 }

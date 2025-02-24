@@ -100,13 +100,19 @@
   flex-direction: row; /* Horizontal layout for image and text */
   justify-content: space-between;
   padding: 0 40px;
+  padding-top: 20px;
   align-items: flex-start;
   gap: 60px;
 }
 
 .tab-image {
-  height: 50%;
+  width: 50%;
   object-fit: contain;
+}
+
+.tab-content-1 .tab-item .tab-image {
+  height: 50%;
+  width: auto;
 }
 
 .tab-text {
@@ -163,12 +169,26 @@
   .winners {
     min-width: 80vw;
   }
+  .tab-content-3 .tab-item,
+  .tab-content-2 .tab-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tab-content-3 .tab-item .tab-image,
+  .tab-item .tab-text {
+    width: 95%;
+  }
+  .tab-content-2 .tab-item .tab-image,
+  .tab-content-2 .tab-item .tab-text {
+    width: 80%;
+  }
 }
 
 /* Handle small screens for responsiveness */
 @media (max-width: 767px) {
   .tab-item {
     flex-direction: column; /* Stack the image and text vertically */
+    align-items: center;
   }
 
   .tab-image {
@@ -176,6 +196,7 @@
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 30px; /* Add some space between image and text */
+    object-fit: contain;
   }
 
   .tab-text {
@@ -204,6 +225,14 @@
   .tabs label {
     font-size: 1.2rem;
   }
+  .tab-content-3 .tab-item .tab-image,
+  .tab-item .tab-text,
+  .tab-content-2 .tab-item .tab-image,
+  .tab-content-2 .tab-item .tab-text,
+  .tab-content-1 .tab-item .tab-image,
+  .tab-content-1 .tab-item .tab-text {
+    width: 100%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -213,5 +242,9 @@
   .tab-text {
     min-width: 100%;
     font-size: 1rem;
+  }
+  .tab-content-1 .tab-item .tab-image,
+  .tab-item .tab-text {
+    width: 100%;
   }
 }

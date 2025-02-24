@@ -1,0 +1,217 @@
+.winners {
+  width: 60vw;
+  height: auto;
+  padding: 1rem;
+  margin: 2rem auto;
+  background-color: #000000;
+  filter: none;
+}
+
+.tabs {
+  --tab-count: 3;
+  --active: 0;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  height: 3.5rem;
+  border-block-end: 1px solid #e9ebec;
+}
+
+.tabs input {
+  display: none;
+}
+
+.tabs label {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #656d7b;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+.tabs input:checked + label {
+  color: #101010;
+}
+
+.tabs::after {
+  pointer-events: none;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  /* inset: 0; */
+  inset: 0 0 -1px;
+  /* width: 100%; */
+  /* width: calc((100% / 3) - 2px); */
+  width: calc((100% / var(--tab-count)) - 2px);
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 1px solid #e9ebec;
+  border-block-end: none;
+  background-image: linear-gradient(#edf4ff, #fff);
+
+  /*
+      1st = 0 * 100% = 0%
+      2nd = 1 * 100% = 100%
+      3rd = 2 * 100% = 200%
+    */
+  translate: calc(var(--active) * 100%);
+  transition: translate 0.5s ease-in-out;
+}
+
+.tabs:has(:checked:nth-of-type(1)) {
+  --active: 0;
+}
+
+.tabs:has(:checked:nth-of-type(2)) {
+  --active: 1;
+}
+
+.tabs:has(:checked:nth-of-type(3)) {
+  --active: 2;
+}
+
+.tab-content {
+  padding: 1rem;
+}
+
+.tab-content-1,
+.tab-content-2,
+.tab-content-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+[class^="tab-content-"] {
+  display: none;
+}
+
+.winners:has(:checked:nth-of-type(1)) .tab-content-1,
+.winners:has(:checked:nth-of-type(2)) .tab-content-2,
+.winners:has(:checked:nth-of-type(3)) .tab-content-3 {
+  display: block;
+}
+
+.tab-item {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for image and text */
+  justify-content: space-between;
+  padding: 0 40px;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.tab-image {
+  height: 50%;
+  object-fit: contain;
+}
+
+.tab-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  width: 50%;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.tab-link {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-link:hover {
+  background-color: #2980b9; /* Darken link on hover */
+}
+
+/* Handle vertical images */
+.tab-image.vertical {
+  width: 30%; /* Adjust width for vertical images */
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1350px) {
+  .tab-content,
+  .tab-item,
+  .tab-text {
+    padding: 10px;
+  }
+
+  .tab-item {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .tab-image {
+    width: 30%; /* Adjust width on small screens */
+  }
+  .winners {
+    min-width: 80vw;
+  }
+}
+
+/* Handle small screens for responsiveness */
+@media (max-width: 767px) {
+  .tab-item {
+    flex-direction: column; /* Stack the image and text vertically */
+  }
+
+  .tab-image {
+    width: 60%; /* Adjust width on small screens */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 30px; /* Add some space between image and text */
+  }
+
+  .tab-text {
+    width: 90%;
+  }
+
+  .tab-link {
+    margin-top: 20px; /* Adjust margin for link */
+    align-self: center; /* Center link on small screens */
+  }
+  .tabs label {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tab-image {
+    width: 90%; /* Adjust width on small screens */
+  }
+  .winners {
+    min-width: 80vw;
+  }
+  .tab-text {
+    min-width: 100%;
+  }
+  .tabs label {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .tabs label {
+    font-size: 1.1rem;
+  }
+  .tab-text {
+    min-width: 100%;
+    font-size: 1rem;
+  }
+}

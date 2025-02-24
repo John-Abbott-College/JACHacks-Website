@@ -191,7 +191,8 @@ html {
   margin-left: 2em;
 }
 
-#dream-it .container {
+#dream-it .container,
+#last-year .container {
   margin: 0 auto;
   filter: none;
 }
@@ -202,6 +203,20 @@ html {
   height: 100vh;
   width: 100vh;
   margin-bottom: 15vh;
+}
+
+#last-year {
+  margin-top: 30vh;
+  margin-bottom: 15vh;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+}
+
+#last-year-img {
+  max-width: 600px;
 }
 
 @keyframes pop-up {

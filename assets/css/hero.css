@@ -26,17 +26,6 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(
-      to bottom right,
-      rgba(161, 56, 56, 1) 0%,
-      rgba(161, 56, 56, 0) 50%
-    ),
-    linear-gradient(
-      to bottom left,
-      rgba(88, 28, 129, 1) 0%,
-      rgba(88, 28, 129, 0) 50%
-    ),
-    rgb(0, 0, 0);
 }
 
 .hero > * {

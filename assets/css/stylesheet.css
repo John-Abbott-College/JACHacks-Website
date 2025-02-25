@@ -166,11 +166,11 @@ html {
   font-size: 1.8rem;
   font-weight: 600;
   color: rgb(240, 234, 234);
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
 }
 
 .container-content {
-  background-color: #ee353b;
+  background-color: #9c0059;
   color: rgb(228, 220, 220);
   padding: 0.8em;
   font-size: 1.2rem;

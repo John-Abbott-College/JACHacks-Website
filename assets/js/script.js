@@ -55,7 +55,11 @@ const intro = document.querySelector(".intro");
 let animationInterval;
 
 const getIntroBottom = () => {
-  return intro.getBoundingClientRect().bottom + window.scrollY;
+  let result = intro.getBoundingClientRect().bottom + window.scrollY;
+  if (result < 800) {
+    result = 800;
+  }
+  return result;
 };
 
 const draw = () => {
@@ -65,7 +69,7 @@ const draw = () => {
   context.fillStyle = "rgb(100, 100, 100, 1)";
   context.font = fontSize + "px monospace";
 
-  const introBottom = getIntroBottom();
+  let introBottom = getIntroBottom();
 
   for (let i = 0; i < raindrops.length; i++) {
     const text = charset.charAt(Math.floor(Math.random() * charset.length));

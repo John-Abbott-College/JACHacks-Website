@@ -56,7 +56,7 @@ html {
   flex-direction: column;
   max-width: 60%;
   border: 2px solid #fff;
-  --shadow-color: rgba(88, 28, 129, 1);
+  --shadow-color: rgb(207, 207, 207);
   filter: drop-shadow(1px 2px 8px var(--shadow-color));
   border-radius: 5px;
 }
@@ -168,12 +168,12 @@ html {
   font-size: 1.8rem;
   font-weight: 600;
   color: rgb(240, 234, 234);
-  background-color: rgb(102, 33, 148);
+  background-color: var(--main-color);
 }
 
 .container-content {
-  background-image: linear-gradient(rgb(70, 15, 107), rgb(68, 12, 105));
-  color: rgb(209, 208, 208);
+  background-image: linear-gradient(#FED3C4, #FF5B61, #BE026C);
+  color: rgb(1, 1, 1);
   padding: 0.8em;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -548,7 +548,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#210136, #350112);
+  background-image: linear-gradient(#7d0147, #000000);
   z-index: 1;
 }
 

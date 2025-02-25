@@ -56,8 +56,6 @@ html {
   flex-direction: column;
   max-width: 60%;
   border: 2px solid #fff;
-  --shadow-color: rgb(207, 207, 207);
-  filter: drop-shadow(1px 2px 8px var(--shadow-color));
   border-radius: 5px;
 }
 /*
@@ -172,8 +170,8 @@ html {
 }
 
 .container-content {
-  background-image: linear-gradient(#FED3C4, #FF5B61, #BE026C);
-  color: rgb(1, 1, 1);
+  background-color: #ee353b;
+  color: rgb(228, 220, 220);
   padding: 0.8em;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -433,7 +431,6 @@ html {
 
 #dream-it .container-content {
   margin: auto;
-  background-color: #7e7e7e;
 }
 
 @media (max-width: 1500px) {

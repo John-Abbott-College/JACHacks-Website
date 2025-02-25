@@ -9,10 +9,10 @@
 }
 /* CSS */
 :root {
-  --text-color: rgb(102, 36, 36);
-  --bg-color: rgb(190, 68, 68);
-  --shadow-color: rgba(161, 56, 56, 1);
-  --shadow-hover: rgba(161, 56, 56, 1);
+  --text-color: #632628;
+  --bg-color: #FF5B61;
+  --shadow-color: #da4c51;
+  --shadow-hover: #ce4c50;
 }
 
 body {

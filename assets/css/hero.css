@@ -9,10 +9,10 @@
 }
 /* CSS */
 :root {
-  --text-color: rgb(105, 29, 29);
-  --bg-color: rgb(214, 56, 56);
-  --shadow-color: rgba(212, 9, 36, 0.5);
-  --shadow-hover: rgba(212, 9, 43, 0.8);
+  --text-color: rgb(102, 36, 36);
+  --bg-color: rgb(190, 68, 68);
+  --shadow-color: rgba(161, 56, 56, 1);
+  --shadow-hover: rgba(161, 56, 56, 1);
 }
 
 body {
@@ -23,7 +23,6 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
-  overflow: hidden; /* Prevent horizontal overflow */
   background: linear-gradient(
       to bottom right,
       rgba(161, 56, 56, 1) 0%,
@@ -42,10 +41,21 @@ body {
 }
 
 .bits {
+  top: -28px;
   left: 0px;
-  width: 20%;
+  width: 12%;
   z-index: 2;
+  overflow: visible;
 }
+
+#bits2 {
+  right: 0px;
+  bottom: -28px;
+  width: 12%;
+  transform: scaleY(-1);
+  overflow: visible;
+}
+
 
 .lines {
   top: 50%;
@@ -54,6 +64,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0.9;
+  max-height: 750px;
 }
 
 .logo {
@@ -130,8 +141,8 @@ body {
   .regist-button {
     font-size: 25px;
   }
-  .bits {
-    width: 30%;
+  .bits, #bits2 {
+    display: none;
   }
 }
 
@@ -150,10 +161,7 @@ body {
   .date {
     margin-right: 20px;
   }
-  
-  .bits {
-    display: none;
-  }
+
   .lines {
     top: 40%;
   }

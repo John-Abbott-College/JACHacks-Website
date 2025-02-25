@@ -8,19 +8,25 @@ var iRow,
   iScrollAt = 20,
   iTextPos = 0,
   sContents = "";
-function typewriter() {
-  (sContents = " "), (iRow = Math.max(0, iIndex - iScrollAt));
-  for (var e = document.getElementById("typedtext"); iRow < iIndex; )
-    sContents += aText[iRow++] + "<br />";
-  (e.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_"),
-    iTextPos++ == iArrLength
-      ? ((iTextPos = 0),
-        ++iIndex != aText.length &&
-          ((iArrLength = aText[iIndex].length),
-          setTimeout("typewriter()", 500)))
-      : setTimeout("typewriter()", iSpeed);
-}
-typewriter();
+  function typewriter() {
+    (sContents = " "), (iRow = Math.max(0, iIndex - iScrollAt));
+    for (var e = document.getElementById("typedtext"); iRow < iIndex; )
+      sContents += aText[iRow++] + "<br />";
+    
+    let cursor = iIndex === aText.length - 1 && iTextPos === iArrLength ? "" : "_";
+    e.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + cursor;
+    
+    if (iTextPos++ == iArrLength) {
+      iTextPos = 0;
+      if (++iIndex != aText.length) {
+        iArrLength = aText[iIndex].length;
+        setTimeout(typewriter, 500);
+      }
+    } else {
+      setTimeout(typewriter, iSpeed);
+    }
+  }
+  typewriter();
 
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".pop-up-image");

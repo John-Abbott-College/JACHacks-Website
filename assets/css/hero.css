@@ -11,10 +11,8 @@
 :root {
   --text-color: #632628;
   --bg-color: #FF5B61;
-  --shadow-color: #b83f43;
-  --shadow-hover: #f1a5a5;
-  --main-color: #FF5B61;
-  --secondary-color: #BE026C;
+  --shadow-color: #da4c51;
+  --shadow-hover: #ce4c50;
 }
 
 body {

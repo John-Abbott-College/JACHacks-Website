@@ -56,8 +56,6 @@ html {
   flex-direction: column;
   max-width: 60%;
   border: 2px solid #fff;
-  --shadow-color: rgba(88, 28, 129, 1);
-  filter: drop-shadow(1px 2px 8px var(--shadow-color));
   border-radius: 5px;
 }
 /*
@@ -168,12 +166,13 @@ html {
   font-size: 1.8rem;
   font-weight: 600;
   color: rgb(240, 234, 234);
-  background-color: rgb(102, 33, 148);
+  background-color: var(--secondary-color);
 }
 
 .container-content {
-  background-image: linear-gradient(rgb(70, 15, 107), rgb(68, 12, 105));
-  color: rgb(209, 208, 208);
+  background-color: #9c0059;
+  color: rgb(228, 220, 220);
+}
   padding: 0.8em;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -433,7 +432,6 @@ html {
 
 #dream-it .container-content {
   margin: auto;
-  background-color: #7e7e7e;
 }
 
 @media (max-width: 1500px) {

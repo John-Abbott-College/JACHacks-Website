@@ -136,6 +136,11 @@ body {
 }
 
 @media (max-width: 800px) {
+  .logo {
+    top: 25%;
+    left: 50%;
+    width: 400px;
+  }
   .date-button,
   #typedtext {
     font-size: 32px;

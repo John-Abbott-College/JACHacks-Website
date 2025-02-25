@@ -545,7 +545,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(--secondary-color, #350112);
+  background-image: linear-gradient(#7d0147, #000000);
   z-index: 1;
 }
 

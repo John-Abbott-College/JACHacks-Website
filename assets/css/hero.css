@@ -10,11 +10,11 @@
 /* CSS */
 :root {
   --text-color: #632628;
-  --bg-color: #FF5B61;
+  --bg-color: #ff5b61;
   --shadow-color: #b83f43;
   --shadow-hover: #f1a5a5;
-  --main-color: #FF5B61;
-  --secondary-color: #BE026C;
+  --main-color: #ff5b61;
+  --secondary-color: #be026c;
 }
 
 body {
@@ -25,6 +25,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
+  overflow: hidden;
   background: linear-gradient(
       to bottom right,
       rgba(161, 56, 56, 1) 0%,
@@ -58,7 +59,6 @@ body {
   overflow: visible;
 }
 
-
 .lines {
   top: 50%;
   left: 50%;
@@ -66,7 +66,6 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0.9;
-  max-height: 750px;
 }
 
 .logo {
@@ -143,7 +142,8 @@ body {
   .regist-button {
     font-size: 25px;
   }
-  .bits, #bits2 {
+  .bits,
+  #bits2 {
     display: none;
   }
 }

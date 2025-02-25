@@ -172,7 +172,6 @@ html {
 .container-content {
   background-color: #9c0059;
   color: rgb(228, 220, 220);
-}
   padding: 0.8em;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -546,7 +545,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#210136, #350112);
+  background-image: linear-gradient(--secondary-color, #350112);
   z-index: 1;
 }
 

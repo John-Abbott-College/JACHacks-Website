@@ -13,12 +13,12 @@
 
 ::-moz-selection {
   color: #ffffff;
-  background: rgb(163, 98, 154);
+  background: #ff5b61;
 }
 
 ::selection {
   color: rgb(255, 255, 255);
-  background: rgba(207, 130, 211, 0.523);
+  background: #ff5b61;
 }
 
 @font-face {
@@ -34,6 +34,15 @@ body {
   font-family: Pattanakarn, JetBrains Mono, monospace;
   overflow-x: hidden !important;
   background-color: #1b1630;
+}
+
+a {
+  color: #ff5b61; /* Sets the text color to orange */
+  text-decoration: none; /* Optional: Removes underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Optional: Adds underline on hover */
 }
 
 html {
@@ -58,6 +67,33 @@ html {
   border: 2px solid #fff;
   border-radius: 5px;
 }
+
+#mlh-code-conduct {
+  padding: 0;
+  margin-bottom: 10vh;
+}
+
+#mlh-code-conduct-title {
+  min-width: 100%;
+  background-color: #862946;
+  text-align: center;
+}
+
+#mlh-code-conduct-content {
+  background-color: #550e25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+}
+
+#mlh-code-conduct-link {
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
 /*
 #sponsors {
   display: flex;
@@ -260,6 +296,12 @@ html {
   }
   #last-year-info {
     max-width: 100%;
+  }
+  #mlh-code-conduct-title {
+    font-size: 1.5rem;
+  }
+  #mlh-code-conduct-content {
+    font-size: 1.1rem;
   }
 }
 

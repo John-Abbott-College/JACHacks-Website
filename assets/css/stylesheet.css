@@ -100,7 +100,8 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 6rem;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
 }
 
 .sponsor-container {
@@ -111,6 +112,11 @@ html {
   flex-direction: column;
   margin-bottom: 2em;
   width: 70%;
+  padding: 40px 20px;
+  text-align: center;
+  z-index: 5;
+  background-color: white;
+  position: relative;
 }
 
 .sponsor {
@@ -121,14 +127,76 @@ html {
   transition: transform 0.1s;
 }
 
-.sponsor:hover {
-  transform: scale(1.12);
+#nordsec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  z-index: 5;
 }
 
-.sponsor,
+#nordsec a img {
+  height: 110px; /* Increased from 64px to 96px */
+  transition: transform 0.3s ease;
+  filter: brightness(0.95);
+}
+
+#nordsec a img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+#sponsors-title h1 {
+  font-size: 200px;
+}
+
+@media (max-width: 900px) {
+  #sponsors {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #nordsec {
+    gap: 40px;
+  }
+
+  #nordsec a img {
+    height: 90px; /* Slightly smaller on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+
+
+  #nordsec {
+    gap: 24px;
+  }
+  #nordsec a img {
+    height: 72px; /* Slightly smaller on mobile */
+  }
+}
+
+@media (max-width: 500px) {
+  #nordsec a img {
+    height: 50px; /* Slightly smaller on mobile */
+  }
+}
+
+@media (max-width: 400px) {
+  #nordsec a img {
+    height: 45px; /* Slightly smaller on mobile */
+  }
+}
+
 .border-outline {
-  height: 180px;
-  width: 80%;
+  position: absolute;
+  z-index: 0;
+  bottom: -20px; /* move it below the container */
+  right: -20px;   /* move it to the left of the container */
+  width: 80%;  /* adjust as needed */
+  background-color: #ff5b61; /* or whatever color you prefer */
+  height: 80%;
 }
 
 :root {
@@ -137,10 +205,6 @@ html {
     rgb(138, 111, 250),
     rgb(38, 162, 255)
   );
-}
-
-#first-sponsor {
-  --gradient: rgb(138, 111, 250);
 }
 
 #middle-sponsor {
@@ -153,12 +217,6 @@ html {
 
 #last-sponsor {
   --gradient: rgb(38, 162, 255);
-}
-
-.border-outline {
-  background: var(--gradient);
-  margin-left: 20px;
-  margin-top: -170px;
 }
 
 .sponsor a {
@@ -500,7 +558,7 @@ html {
   }
 
   .sponsor-container {
-    width: 90%;
+    width: 80%;
   }
 
   .about-info {
@@ -529,17 +587,6 @@ html {
     font-size: 1.1rem;
   }
 
-  .sponsor,
-  .border-outline {
-    width: 65%;
-    height: 140px;
-  }
-
-  .border-outline {
-    margin-top: -132px;
-    margin-left: 15px;
-  }
-
   .sponsor img {
     width: 75%;
   }
@@ -563,18 +610,7 @@ html {
   }
 
   .sponsor-container {
-    width: 100%;
-  }
-
-  .sponsor,
-  .border-outline {
     width: 80%;
-    height: 120px;
-  }
-
-  .border-outline {
-    margin-top: -113px;
-    margin-left: 14px;
   }
 
   #ITS-sponsor {

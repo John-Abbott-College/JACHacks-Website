@@ -101,29 +101,37 @@ html {
   justify-content: center;
   flex-direction: column;
   margin-top: 15rem;
-  margin-bottom: 15rem;
+  margin-bottom: 7rem;
+  position: relative;
 }
 
 .sponsor-container {
+  position: relative;
   display: flex;
   color: black;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 2em;
-  width: 70%;
   padding: 40px 20px;
   text-align: center;
-  z-index: 5;
   background-color: white;
+  z-index: 5;
+}
+
+.sponsor-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  width: 70%;
 }
 
 .sponsor {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 5;
   transition: transform 0.1s;
 }
 
@@ -133,7 +141,6 @@ html {
   justify-content: center;
   gap: 60px;
   align-items: center;
-  z-index: 5;
 }
 
 #nordsec a img {
@@ -192,11 +199,11 @@ html {
 .border-outline {
   position: absolute;
   z-index: 0;
-  bottom: -20px; /* move it below the container */
-  right: -20px;   /* move it to the left of the container */
-  width: 80%;  /* adjust as needed */
-  background-color: #ff5b61; /* or whatever color you prefer */
-  height: 80%;
+  bottom: 10px;
+  right: -20px;
+  width: 90%;
+  background-color: #ff5b61;
+  height: 90%;
 }
 
 :root {
@@ -557,7 +564,7 @@ html {
     flex-direction: column;
   }
 
-  .sponsor-container {
+  .sponsor-wrapper {
     width: 80%;
   }
 
@@ -609,7 +616,7 @@ html {
     max-width: 80%;
   }
 
-  .sponsor-container {
+  .sponsor-wrapper {
     width: 80%;
   }
 
@@ -624,7 +631,7 @@ main {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(#7d0147, #000000);
-  z-index: 1;
+  z-index: 2;
 }
 
 h1 {

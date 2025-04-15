@@ -117,6 +117,7 @@ html {
   text-align: center;
   background-color: white;
   z-index: 5;
+  min-width: 100%;
 }
 
 .sponsor-wrapper {
@@ -149,16 +150,25 @@ html {
   filter: brightness(0.95);
 }
 
-#nordsec a img:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
+#JACFA a img, #Druide a img {
+ width: 70%;
 }
 
 #sponsors-title h1 {
   font-size: 200px;
 }
 
-@media (max-width: 900px) {
+.border-outline {
+  position: absolute;
+  z-index: 0;
+  bottom: 10px;
+  right: -20px;
+  width: 90%;
+  background-color: #ff5b61;
+  height: 90%;
+}
+
+@media (max-width: 1000px) {
   #sponsors {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -169,19 +179,48 @@ html {
   }
 
   #nordsec a img {
-    height: 90px; /* Slightly smaller on mobile */
+    height: 85px; /* Slightly smaller on mobile */
+  }
+
+  #Druide a img {
+    width: 75%;
+   }
+
+   .border-outline {
+    height: 85%;
+    bottom: 15px;
+    right: -15px;
+   }
+
+  #JACFA a img {
+    width: 80%;
+   }
+   .sponsor-container {
+    padding: 15px;
   }
 }
 
 @media (max-width: 600px) {
 
-
+  .sponsor-container {
+    padding: 10px;
+  }
   #nordsec {
     gap: 24px;
   }
-  #nordsec a img {
-    height: 72px; /* Slightly smaller on mobile */
+
+  #Druide a img {
+    width: 90%;
   }
+
+  #JACFA a img {
+    width: 100%;
+   }
+   .border-outline {
+    height: 70%;
+    bottom: 20px;
+    right: -10px;
+   }
 }
 
 @media (max-width: 500px) {
@@ -194,16 +233,6 @@ html {
   #nordsec a img {
     height: 45px; /* Slightly smaller on mobile */
   }
-}
-
-.border-outline {
-  position: absolute;
-  z-index: 0;
-  bottom: 10px;
-  right: -20px;
-  width: 90%;
-  background-color: #ff5b61;
-  height: 90%;
 }
 
 :root {

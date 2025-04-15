@@ -150,7 +150,11 @@ html {
   filter: brightness(0.95);
 }
 
-#JACFA a img, #Druide a img {
+#Druide a img {
+  width: 50%;
+}
+
+#JACFA a img {
  width: 70%;
 }
 
@@ -183,7 +187,7 @@ html {
   }
 
   #Druide a img {
-    width: 75%;
+    width: 60%;
    }
 
    .border-outline {
@@ -210,7 +214,7 @@ html {
   }
 
   #Druide a img {
-    width: 90%;
+    width: 70%;
   }
 
   #JACFA a img {

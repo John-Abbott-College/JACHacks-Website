@@ -140,7 +140,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -151,7 +151,7 @@ html {
 }
 
 #Druide a img {
-  width: 50%;
+  width: 45%;
 }
 
 #JACFA a img {
@@ -179,7 +179,7 @@ html {
   }
 
   #nordsec {
-    gap: 40px;
+    gap: 24px;
   }
 
   #nordsec a img {
@@ -205,12 +205,17 @@ html {
 }
 
 @media (max-width: 600px) {
-
+    #sponsors {
+    margin-top:3rem;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+    padding: 0;
+  }
   .sponsor-container {
     padding: 10px;
   }
   #nordsec {
-    gap: 24px;
+    gap: 15px;
   }
 
   #Druide a img {
@@ -265,23 +270,15 @@ html {
   align-items: center;
 }
 
-.sponsor img {
-  width: 55%;
-}
-
-.sujac img {
-  width: 65%;
-}
-
-.valnet img {
-  width: 35%;
+#Sujac img {
+  width: 100%;
 }
 
 #ITS-sponsor {
   color: black;
-  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+  font-size: 3rem;
 }
 
 #about {
@@ -574,16 +571,9 @@ html {
 }
 
 @media (max-width: 1500px) {
-  .sponsor img {
+
+  #Sujac img {
     width: 65%;
-  }
-
-  .sujac img {
-    width: 55%;
-  }
-
-  .valnet img {
-    width: 40%;
   }
 
   #ITS-sponsor {
@@ -627,21 +617,22 @@ html {
     font-size: 1.1rem;
   }
 
-  .sponsor img {
+  #Sujac img {
     width: 75%;
-  }
-
-  .sujac img {
-    width: 65%;
   }
 
   .valnet img {
     width: 60%;
   }
-
   #ITS-sponsor {
     font-size: 1.75rem;
   }
+
+  .sponsor-wrapper {
+    width: 80%;
+    margin-bottom: 2.5rem;
+  }
+
 }
 
 @media (max-width: 720px) {
@@ -651,10 +642,12 @@ html {
 
   .sponsor-wrapper {
     width: 80%;
+    margin-bottom: 1rem;
   }
 
   #ITS-sponsor {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
   }
 }
 

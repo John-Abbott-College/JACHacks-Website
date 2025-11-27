@@ -1,6 +1,6 @@
 let language = document.getElementsByTagName("html")[0].getAttribute("lang");
 if ("fr" == language) var aText = new Array("2-3 Avril");
-else aText = new Array("April 2-3");
+else aText = new Array("April 11-12");
 var iRow,
   iSpeed = 140,
   iIndex = 0,

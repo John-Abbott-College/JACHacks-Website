@@ -140,7 +140,9 @@
   bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .tab-link:hover {
@@ -259,4 +261,13 @@
     font-size: 0.7rem;
     align-items: center;
   }
+}
+
+.sentinel-logo {
+  width: 180px;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
 }

@@ -1,5 +1,5 @@
 let language = document.getElementsByTagName("html")[0].getAttribute("lang");
-if ("fr" == language) var aText = new Array("2-3 Avril");
+if ("fr" == language) var aText = new Array("11-12 avril");
 else aText = new Array("April 11-12");
 var iRow,
   iSpeed = 140,
@@ -9,7 +9,7 @@ var iRow,
   iTextPos = 0,
   sContents = "";
 function typewriter() {
-  (sContents = " "), (iRow = Math.max(0, iIndex - iScrollAt));
+  ((sContents = " "), (iRow = Math.max(0, iIndex - iScrollAt)));
   for (var e = document.getElementById("typedtext"); iRow < iIndex; )
     sContents += aText[iRow++] + "<br />";
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.1 },
   );
   images.forEach((image) => {
     observer.observe(image);

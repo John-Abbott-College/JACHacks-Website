@@ -3,7 +3,7 @@
   height: auto;
   padding: 1rem;
   margin: 2rem auto;
-  background-color: #550e25;
+  background-color: #00b374;
   filter: none;
   margin-bottom: 15vh;
 }
@@ -15,7 +15,7 @@
   isolation: isolate;
   display: flex;
   height: 3.5rem;
-  border-block-end: 1px solid #e9ebec;
+  border-block-end: 1px solid #42c8d9;
 }
 
 .tabs input {
@@ -28,13 +28,15 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color: rgb(240, 234, 234);
+  color: white;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
+  background-color: #427cd9;
 }
 
 .tabs input:checked + label {
-  color: rgb(240, 234, 234);
+  color: white;
+  background-color: #5442d9;
 }
 
 .tabs::after {
@@ -48,9 +50,9 @@
   /* width: calc((100% / 3) - 2px); */
   width: calc((100% / var(--tab-count)) - 2px);
   border-radius: 0.5rem 0.5rem 0 0;
-  border: 1px solid #e9ebec;
+  border: 1px solid #42c8d9;
   border-block-end: none;
-  background-color: #862946;
+  background-color: #5442d9;
 
   /*
       1st = 0 * 100% = 0%
@@ -124,15 +126,16 @@
   width: 50%;
   padding: 20px;
   flex-grow: 1;
-  color: rgb(209, 208, 208);
+  color: white;
 }
 
 .tab-link {
   width: 200px;
   text-align: center;
   padding: 10px;
-  color: rgb(209, 208, 208);
-  border: 1px solid rgb(209, 208, 208);
+  color: white;
+  background-color: #42d953;
+  border: 1px solid #42d953;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 30px;
@@ -147,6 +150,9 @@
 
 .tab-link:hover {
   transform: scale(1.1); /* Increase the size by 10% */
+  background-color: #00b374;
+  color: white;
+  border-color: #00b374;
 }
 
 /* Handle vertical images */

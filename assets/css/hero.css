@@ -1,3 +1,12 @@
+:root {
+  --text-color: #ffffff;
+  --bg-color: #00b374;
+  --shadow-color: #007a4d;
+  --shadow-hover: #42d953;
+  --main-color: #427cd9;
+  --secondary-color: #b3003f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +16,7 @@
   font-family: Pattanakarn;
   src: url("../Pattanakarn_Regular.ttf");
 }
-/* CSS */
+
 :root {
   --text-color: #632628;
   --bg-color: #ff5b61;
@@ -18,7 +27,10 @@
 }
 
 body {
-  font-family: Pattanakarn, JetBrains Mono, monospace;
+  font-family:
+    Pattanakarn,
+    JetBrains Mono,
+    monospace;
 }
 
 .hero {
@@ -67,6 +79,7 @@ body {
 
 #typedtext {
   font-size: 50px;
+  color: #42c8d9;
 }
 
 .date-button {
@@ -75,7 +88,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: 20%;
-  color: var(--bg-color);
+  color: #42c8d9;
   z-index: 3;
   font-size: 50px;
   display: flex;
@@ -85,19 +98,26 @@ body {
 
 .date {
   margin-right: 30px;
+  color: #42c8d9;
 }
 
 .regist-button {
   margin-left: 30px;
   font-size: 30px;
-  background-color: var(--bg-color);
+  background-color: #00b374 !important;
   border-radius: 10px;
-  font-family: Pattanakarn, JetBrains Mono, monospace;
-  box-shadow: var(--shadow-color) 0 -25px 18px -14px inset,
-    var(--shadow-color) 0 1px 2px, var(--shadow-color) 0 2px 4px,
-    var(--shadow-color) 0 2px 4px, var(--shadow-color) 0 6px 12px,
-    var(--shadow-color) 0 6px 12px;
-  color: var(--text-color);
+  font-family:
+    Pattanakarn,
+    JetBrains Mono,
+    monospace;
+  box-shadow:
+    #007a4d 0 -25px 18px -14px inset,
+    #007a4d 0 1px 2px,
+    #007a4d 0 2px 4px,
+    #007a4d 0 2px 4px,
+    #007a4d 0 6px 12px,
+    #007a4d 0 6px 12px !important;
+  color: white !important;
   cursor: pointer;
   display: inline-block;
   padding: 7px 20px;
@@ -111,11 +131,15 @@ body {
 }
 
 .regist-button:hover {
-  box-shadow: var(--shadow-hover) 0 -25px 18px -14px inset,
-    var(--shadow-hover) 0 1px 2px, var(--shadow-hover) 0 2px 4px,
-    var(--shadow-hover) 0 2px 4px, var(--shadow-hover) 0 6px 12px,
-    var(--shadow-hover) 0 6px 12px;
+  box-shadow:
+    #42d953 0 -25px 18px -14px inset,
+    #42d953 0 1px 2px,
+    #42d953 0 2px 4px,
+    #42d953 0 2px 4px,
+    #42d953 0 6px 12px,
+    #42d953 0 6px 12px !important;
   transform: scale(1.05);
+  background-color: #42d953 !important;
 }
 
 @media (max-width: 1199px) {

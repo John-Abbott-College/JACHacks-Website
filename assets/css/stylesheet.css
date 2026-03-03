@@ -326,11 +326,11 @@ html {
   margin-top: 15vh;
   height: 100vh;
   width: 100vh;
-  margin-bottom: 15vh;
+  margin-bottom: 0vh;
 }
 
 #last-year {
-  margin-top: 30vh;
+  margin-top: 11vh;
   margin-bottom: 15vh;
   display: flex;
   gap: 40px;
@@ -1132,5 +1132,220 @@ hr {
 
   #typedtext {
     margin-bottom: 0.8em;
+  }
+}
+
+#sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vh 5vw 0vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#sponsors::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(66, 200, 217, 0.03) 3px,
+    rgba(66, 200, 217, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sponsors-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 0.4em;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.04em;
+}
+
+.sponsors-title::after {
+  content: "";
+  display: block;
+  margin: 0.3em auto 0;
+  width: 80px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #42c8d9, #00b374);
+  box-shadow: 0 0 12px rgba(66, 200, 217, 0.6);
+}
+
+.sponsors-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.55);
+  text-align: center;
+  margin: 0.6em 0 3em;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+  line-height: 1.6;
+}
+
+.sponsors-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  z-index: 1;
+}
+
+.sponsors-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tier-1 .sponsor-card,
+.tier-2 .sponsor-card,
+.tier-3 .sponsor-card {
+  flex: 0 0 280px;
+  max-width: 280px;
+  height: 140px;
+}
+
+.sponsor-card {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.sponsor-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #427cd9, #42c8d9, #00b374);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.sponsor-card:hover::after {
+  transform: scaleX(1);
+}
+
+.sponsor-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(66, 200, 217, 0.4);
+  box-shadow:
+    0 0 0 1px rgba(66, 200, 217, 0.2),
+    0 12px 40px rgba(66, 124, 217, 0.25);
+}
+
+.sponsor-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.sponsor-inner img,
+.tier-1 .sponsor-inner img,
+.tier-2 .sponsor-inner img,
+.tier-3 .sponsor-inner img {
+  max-height: 70px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-card:hover .sponsor-inner img {
+  transform: scale(1.05);
+}
+
+.sponsor-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.55s ease calc(var(--delay, 0s)),
+    transform 0.55s ease calc(var(--delay, 0s));
+}
+
+.sponsor-reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .tier-1 .sponsor-card,
+  .tier-2 .sponsor-card,
+  .tier-3 .sponsor-card {
+    flex: 0 0 220px;
+    max-width: 220px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors-title {
+    font-size: 1.8rem;
+  }
+
+  .tier-1 .sponsor-card,
+  .tier-2 .sponsor-card,
+  .tier-3 .sponsor-card {
+    flex: 0 0 180px;
+    max-width: 180px;
+    height: 110px;
+  }
+
+  .sponsor-inner {
+    padding: 18px 20px;
+  }
+
+  .sponsor-inner img,
+  .tier-1 .sponsor-inner img,
+  .tier-2 .sponsor-inner img,
+  .tier-3 .sponsor-inner img {
+    max-height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-row {
+    gap: 1rem;
+  }
+
+  .sponsors-grid {
+    gap: 1rem;
+  }
+
+  .tier-1 .sponsor-card,
+  .tier-2 .sponsor-card,
+  .tier-3 .sponsor-card {
+    flex: 1 1 140px;
+    max-width: none;
+    height: 100px;
+  }
+
+  .sponsor-inner {
+    padding: 14px 16px;
   }
 }

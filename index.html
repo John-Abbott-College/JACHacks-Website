@@ -835,5 +835,43 @@
         </div>
       </div>
     </main>
+
+    <script>
+
+      (function() {
+      
+        function fixSponsors() {
+          document.querySelectorAll('#sponsors .sponsor-inner').forEach(el => {
+            if (el.style.display === 'none') {
+              console.log('Fixing sponsor element:', el);
+              el.style.removeProperty('display');
+            }
+            // Ensure it's visible
+            el.style.setProperty('display', 'flex', 'important');
+          });
+        }
+        
+        fixSponsors();
+        setTimeout(fixSponsors, 100);
+        setTimeout(fixSponsors, 500);
+        setTimeout(fixSponsors, 1000);
+        
+
+        const observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+              if (mutation.target.style.display === 'none') {
+                mutation.target.style.removeProperty('display');
+                mutation.target.style.setProperty('display', 'flex', 'important');
+              }
+            }
+          });
+        });
+        
+        document.querySelectorAll('#sponsors .sponsor-inner').forEach(el => {
+          observer.observe(el, { attributes: true });
+        });
+      })();
+      </script>
   </body>
 </html>

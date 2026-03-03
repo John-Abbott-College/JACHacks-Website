@@ -1273,8 +1273,8 @@ hr {
 .tier-3 .sponsor-inner img {
   max-height: 70px;
   max-width: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   transition: transform 0.3s ease;
 }

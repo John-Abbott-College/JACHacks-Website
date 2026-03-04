@@ -1261,26 +1261,6 @@ hr {
     0 12px 40px rgba(66, 124, 217, 0.25);
 }
 
-.sponsor-inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 32px;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.sponsor-inner img {
-  width: 100%;
-  height: 100%;
-  max-height: 70px;
-  max-width: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
 .sponsor-card:hover .sponsor-inner img {
   transform: scale(1.05);
 }
@@ -1377,4 +1357,15 @@ hr {
     opacity: 1 !important;
     transform: translateY(0) !important;
   }
+}
+
+.sponsor-inner {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 24px 32px !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
 }

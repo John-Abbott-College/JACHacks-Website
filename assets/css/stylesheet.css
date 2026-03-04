@@ -1344,10 +1344,6 @@ hr {
   .sponsor-inner {
     display: flex !important;
   }
-  .sponsor-reveal {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
 }
 
 .sponsor-inner img[alt="NordVPN"] {

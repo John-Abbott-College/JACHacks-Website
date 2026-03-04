@@ -1368,3 +1368,13 @@ hr {
   max-width: 280px;
   height: 140px;
 }
+
+@media (min-width: 769px) {
+  .sponsor-inner {
+    display: flex !important;
+  }
+  .sponsor-reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}

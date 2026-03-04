@@ -1134,7 +1134,6 @@ hr {
     margin-bottom: 0.8em;
   }
 }
-
 #sponsors {
   display: flex;
   flex-direction: column;
@@ -1161,7 +1160,7 @@ hr {
 }
 
 .sponsors-title {
-  font-size: 2.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -1183,11 +1182,11 @@ hr {
 }
 
 .sponsors-subtitle {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.55);
   text-align: center;
   margin: 0.6em 0 3em;
-  max-width: 500px;
+  max-width: 700px;
   position: relative;
   z-index: 1;
   line-height: 1.6;
@@ -1209,6 +1208,12 @@ hr {
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+}
+
+.tier-featured .sponsor-card {
+  flex: 0 0 400px;
+  max-width: 400px;
+  height: 200px;
 }
 
 .tier-1 .sponsor-card,
@@ -1257,24 +1262,21 @@ hr {
 }
 
 .sponsor-inner {
-  display: flex !important;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 24px 32px;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  overflow: visible !important;
+  overflow: hidden;
 }
 
-.sponsor-inner img,
-.tier-1 .sponsor-inner img,
-.tier-2 .sponsor-inner img,
-.tier-3 .sponsor-inner img {
-  max-height: 70px;
-  max-width: 100%;
+.sponsor-inner img {
   width: 100%;
   height: 100%;
+  max-height: 70px;
+  max-width: 100%;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -1297,6 +1299,11 @@ hr {
 }
 
 @media (max-width: 992px) {
+  .tier-featured .sponsor-card {
+    flex: 0 0 320px;
+    max-width: 320px;
+    height: 160px;
+  }
   .tier-1 .sponsor-card,
   .tier-2 .sponsor-card,
   .tier-3 .sponsor-card {
@@ -1308,9 +1315,13 @@ hr {
 
 @media (max-width: 768px) {
   .sponsors-title {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
-
+  .tier-featured .sponsor-card {
+    flex: 0 0 260px;
+    max-width: 260px;
+    height: 130px;
+  }
   .tier-1 .sponsor-card,
   .tier-2 .sponsor-card,
   .tier-3 .sponsor-card {
@@ -1318,15 +1329,10 @@ hr {
     max-width: 180px;
     height: 110px;
   }
-
   .sponsor-inner {
     padding: 18px 20px;
   }
-
-  .sponsor-inner img,
-  .tier-1 .sponsor-inner img,
-  .tier-2 .sponsor-inner img,
-  .tier-3 .sponsor-inner img {
+  .sponsor-inner img {
     max-height: 55px;
   }
 }
@@ -1335,11 +1341,10 @@ hr {
   .sponsors-row {
     gap: 1rem;
   }
-
   .sponsors-grid {
     gap: 1rem;
   }
-
+  .tier-featured .sponsor-card,
   .tier-1 .sponsor-card,
   .tier-2 .sponsor-card,
   .tier-3 .sponsor-card {
@@ -1347,32 +1352,19 @@ hr {
     max-width: none;
     height: 100px;
   }
-
   .sponsor-inner {
     padding: 14px 16px;
   }
 }
 
-.sponsor-inner img[src$=".svg"] {
-  width: auto !important;
-  height: auto !important;
-  min-width: 100px;
-  min-height: 50px;
-  background: #f0f0f0; /* Temporary to see the area */
+.tier-featured .sponsor-inner img {
+  max-height: 250px;
+  width: auto;
+  height: auto;
 }
 
-#sponsors .sponsor-inner {
-  display: flex !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-#sponsors .sponsor-inner[style*="display: none"] {
-  display: flex !important;
-}
-
-#sponsors .sponsor-inner img {
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+.tier-4 .sponsor-card {
+  flex: 0 0 280px;
+  max-width: 280px;
+  height: 140px;
 }

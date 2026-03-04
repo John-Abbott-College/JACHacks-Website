@@ -1312,9 +1312,6 @@ hr {
   .sponsor-inner {
     padding: 18px 20px;
   }
-  .sponsor-inner img {
-    max-height: 55px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1337,12 +1334,6 @@ hr {
   }
 }
 
-.tier-featured .sponsor-inner img {
-  max-height: 250px;
-  width: auto;
-  height: auto;
-}
-
 .tier-4 .sponsor-card {
   flex: 0 0 280px;
   max-width: 280px;
@@ -1357,6 +1348,34 @@ hr {
     opacity: 1 !important;
     transform: translateY(0) !important;
   }
+}
+
+.sponsor-inner img[alt="NordVPN"] {
+  max-height: 50px;
+}
+.sponsor-inner img[alt="NordPass"] {
+  max-height: 60px;
+}
+.sponsor-inner img[alt="JACFA"] {
+  max-height: 100px;
+}
+.sponsor-inner img[alt="Saily"] {
+  max-height: 60px;
+}
+.sponsor-inner img[alt="NordProtect"] {
+  max-height: 80px;
+}
+.sponsor-inner img[alt="NexosAI"] {
+  max-height: 45px;
+}
+.sponsor-inner img[alt="Backboard IO"] {
+  max-height: 30px;
+}
+.sponsor-inner img[alt="Incogni"] {
+  max-height: 50px;
+}
+.sponsor-inner img[alt="FMS"] {
+  max-height: 100px;
 }
 
 .sponsor-inner {

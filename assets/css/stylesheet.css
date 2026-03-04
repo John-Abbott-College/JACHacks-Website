@@ -1374,6 +1374,9 @@ hr {
 .sponsor-inner img[alt="Incogni"] {
   max-height: 50px;
 }
+.sponsor-inner img[alt="Tailed"] {
+  max-height: 80px;
+}
 .sponsor-inner img[alt="FMS"] {
   max-height: 100px;
 }

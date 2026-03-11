@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   images.forEach((image) => imageObserver.observe(image));
 
   // ── Sponsor scroll reveal ──
-  const sponsorCards = document.querySelectorAll(".sponsor-reveal");
+  const sponsorCards = document.querySelectorAll(".org-reveal");
   const sponsorObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {

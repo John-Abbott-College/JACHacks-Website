@@ -1397,3 +1397,7 @@ hr {
   position: relative;
   overflow: hidden;
 }
+
+.sponsor-card a {
+  display: contents;
+}

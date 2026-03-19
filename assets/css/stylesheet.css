@@ -1401,3 +1401,7 @@ hr {
 .org-card a {
   display: contents;
 }
+
+.org-logo img[alt="NVS"] {
+  max-height: 100px;
+}

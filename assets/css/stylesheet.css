@@ -1376,6 +1376,13 @@ hr {
 .org-logo img[alt="FMS"] {
   max-height: 100px;
 }
+.org-logo img[alt="NVS"] {
+  max-height: 100px;
+}
+
+.org-logo img[alt="Valde"] {
+  max-height: 110px;
+}
 
 .org-logo {
   display: flex !important;
@@ -1402,6 +1409,3 @@ hr {
   display: contents;
 }
 
-.org-logo img[alt="NVS"] {
-  max-height: 100px;
-}
